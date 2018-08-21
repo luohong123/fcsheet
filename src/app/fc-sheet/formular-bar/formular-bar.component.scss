@@ -1,0 +1,25 @@
+.formularbar-container {
+    background-color: white;
+    padding: 0px;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.named-range-selector {
+    height: 21px;
+    font-family: "Segoe UI";
+    text-align: center;
+    margin-top: -1px;
+    border: 1px solid #c6c6c6;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.formularbar-item {
+    width: 201px;
+    height: 20px;
+    margin: 1px 0;
+}

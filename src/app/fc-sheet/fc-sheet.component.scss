@@ -1,0 +1,59 @@
+.fcsheet-container {}
+
+.fcsheet-header-top {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.fcsheet-header-container {
+    height: 175px;
+    padding-top: 10px;
+}
+
+.fcsheet-header-btn {
+    color: white;
+    background-color: #217346;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+    margin: 0 2px;
+    float: left;
+    min-width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fcsheet-header-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fcsheet-header-title {
+    display: inline-block;
+    min-width: 50px;
+    line-height: 28px;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.fcsheet-toolbar-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.fcsheet-content-container {}
+
+.fcsheet-footer-container {}
+
+
+
+.active {
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    font-weight: bolder;
+}

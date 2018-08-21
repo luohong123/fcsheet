@@ -1,0 +1,26 @@
+<div class="fcsheet-container">
+    <div class="fcsheet-header-container" [style.width.px]="getWindowWidth()">
+        <div class="fcsheet-header-top">
+            <div class="fcsheet-header-btn" (click)="event({eventName:fcSheetEvents.fileBtnClick,event:$event})">
+                <span style="font-size: 13px">文件</span>
+            </div>
+            <div class="fcsheet-header-tabs">
+                <span *ngFor="let tab of tabs" class="fcsheet-header-title" [ngClass]="{'active':tab.selected}" (click)="event({eventName:fcSheetEvents.tabBtnClick,event:$event,param:tab})">{{tab.name}}</span>
+            </div>
+        </div>
+        <start-toolbar *ngIf="ableToRender('start')"></start-toolbar>
+        <insert-toolbar *ngIf="ableToRender('insert')"></insert-toolbar>
+        <formula-toolbar *ngIf="ableToRender('formula')"></formula-toolbar>
+        <data-toolbar *ngIf="ableToRender('data')"></data-toolbar>
+        <view-toolbar *ngIf="ableToRender('view')"></view-toolbar>
+        <setting-toolbar *ngIf="ableToRender('setting')"></setting-toolbar>
+        <formular-bar></formular-bar>
+    </div>
+    <div class="fcsheet-content-container" style="min-width: 80%;" *ngIf="true">
+        <gc-spread-sheets (workbookInitialized)="workbookInit($event)" [hostStyle]="hostStyle" hostClass="spreadContainer">
+        </gc-spread-sheets>
+    </div>
+    <div class="fcsheet-footer-container">
+        statusBar is here!!!
+    </div>
+</div>
