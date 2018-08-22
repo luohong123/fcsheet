@@ -1,7 +1,9 @@
 <div class="board-container">
     <div class="board-content-ccontainer">
         <div class="board-tcontent-container">
-
+            <select class="select" name="numFormat" [(ngModel)]="selectedNumFormat">
+                <option *ngFor="let numFormat of numFormats" [value]="numFormat.value">{{numFormat.label}}</option>
+            </select>
         </div>
         <div class="board-bcontent-container">
             <div class="board-btn-container">

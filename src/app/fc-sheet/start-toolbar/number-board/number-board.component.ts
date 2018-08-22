@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 @Component({
-    selector: 'alignment-board',
-    templateUrl: './alignment-board.component.html',
-    styleUrls: [`./alignment-board.component.scss`]
+    selector: 'number-board',
+    templateUrl: './number-board.component.html',
+    styleUrls: [`./number-board.component.scss`]
 })
-export class AlignmentBoardComponent {
+export class NumberBoardComponent {
     constructor() {
     }
     event($event) {

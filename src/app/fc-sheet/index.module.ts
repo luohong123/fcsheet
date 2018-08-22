@@ -14,6 +14,7 @@ import { SpreadSheetsModule } from '@grapecity/spread-sheets-angular';
 import { StatusBarComponent } from './status-bar/status-bar.component';
 import { fontBoardComponent } from './start-toolbar/font-board/font-board.component';
 import { AlignmentBoardComponent } from './start-toolbar/alignment-board/alignment-board.component';
+import { NumberBoardComponent } from './start-toolbar/number-board/number-board.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -36,6 +37,7 @@ import { AlignmentBoardComponent } from './start-toolbar/alignment-board/alignme
     ClipboardComponent,
     fontBoardComponent,
     AlignmentBoardComponent,
+    NumberBoardComponent,
     StatusBarComponent,
   ],
   providers: [
