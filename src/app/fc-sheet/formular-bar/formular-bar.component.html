@@ -1,3 +1,10 @@
 <div class="formularbar-container">
-    <input type="text" [readonly]="readonly" >
+    <input class="named-range-selector" type="text" readonly="readonly" [(ngModel)]="selectedRange">
+    <span class="formularbar-splitter"></span>
+    <div class="formularbar-group">
+        <button class="cancel-btn" style="opacity: 1; transform: none;"></button>
+        <button class="ok-btn" style="opacity: 1; transform: none;"></button>
+        <button class="functions-btn" style="opacity: 1; transform: none;"></button>
+    </div>
+    <input class="formulabar-text-container" [(ngModel)]="formulaValue">
 </div>

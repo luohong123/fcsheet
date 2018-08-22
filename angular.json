@@ -21,7 +21,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "node_modules/@grapecity/spread-sheets/styles/gc.spread.sheets.excel2016darkGray.css"
             ],
             "scripts": []
@@ -69,7 +69,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "styles.css"
+              "styles.scss"
             ],
             "scripts": [],
             "assets": [

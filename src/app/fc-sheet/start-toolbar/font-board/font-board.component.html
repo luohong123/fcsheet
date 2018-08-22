@@ -1,0 +1,64 @@
+<div class="board-container">
+    <div class="board-content-ccontainer">
+        <div class="board-tcontent-container">
+            <select class="font-select" name="fontStatus" [(ngModel)]="selectedFont">
+                <option *ngFor="let font of fonts" [value]="font.value">{{font.label}}</option>
+            </select>
+            <select class="fontsize-select" name="fontSizeStatus" [(ngModel)]="selectedFontSize">
+                <option *ngFor="let fontSize of fontSizes" [value]="fontSize">{{fontSize}}</option>
+            </select>
+            <div class="board-btn-container">
+                <button class="board-default-btn" role="button" (click)="event($event)">
+                    <span class="board-addfontsize-image"></span>
+                </button>
+            </div>
+            <div class="board-btn-container">
+                <button class="board-default-btn" role="button" (click)="event($event)">
+                    <span class="board-decfontsize-image"></span>
+                </button>
+            </div>
+        </div>
+        <div class="board-bcontent-container">
+            <div class="board-btn-container">
+                <button class="board-default-btn" role="button" (click)="event($event)">
+                    <span class="board-bold-image"></span>
+                </button>
+            </div>
+            <div class="board-btn-container">
+                <button class="board-default-btn" role="button" (click)="event($event)">
+                    <span class="board-italic-image"></span>
+                </button>
+            </div>
+            <div class="board-btn-container">
+                <button class="board-default-btn" role="button" (click)="event($event)">
+                    <span class="board-underline-image"></span>
+                </button>
+            </div>
+            <div class="separator"></div>
+            <div class="board-btn-container">
+                <button class="board-default-btn" role="button" (click)="event($event)">
+                    <span class="board-border-image"></span>
+                </button>
+            </div>
+            <div class="separator"></div>
+            <div class="board-btn-container">
+                <button class="board-default-btn" role="button" (click)="event($event)">
+                    <span class="board-backcolor-image"></span>
+                </button>
+            </div>
+            <div class="board-btn-container">
+                <button class="board-default-btn" role="button" (click)="event($event)">
+                    <span class="board-fontcolor-image"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div class="board-bottom-title"> 字体 </div>
+        <div class="board-btn-container">
+            <button class="board-default-btn" role="button" (click)="event($event)">
+                <span class="board-corner-image"></span>
+            </button>
+        </div>
+    </div>
+</div>

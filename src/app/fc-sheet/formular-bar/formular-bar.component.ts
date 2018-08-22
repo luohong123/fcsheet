@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
     styleUrls: [`./formular-bar.component.scss`]
 })
 export class FormulaBarComponent {
-    readonly: true;
+    selectedRange: string = 'H5';
+    formulaValue: string;
     constructor() {
     }
 }

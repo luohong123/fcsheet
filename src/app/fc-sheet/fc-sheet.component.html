@@ -14,13 +14,11 @@
         <data-toolbar *ngIf="ableToRender('data')"></data-toolbar>
         <view-toolbar *ngIf="ableToRender('view')"></view-toolbar>
         <setting-toolbar *ngIf="ableToRender('setting')"></setting-toolbar>
-        <formular-bar></formular-bar>
     </div>
+    <formular-bar style="height:100%"></formular-bar>
     <div class="fcsheet-content-container" style="min-width: 80%;" *ngIf="true">
         <gc-spread-sheets (workbookInitialized)="workbookInit($event)" [hostStyle]="hostStyle" hostClass="spreadContainer">
         </gc-spread-sheets>
     </div>
-    <div class="fcsheet-footer-container">
-        statusBar is here!!!
-    </div>
+    <status-bar></status-bar>
 </div>

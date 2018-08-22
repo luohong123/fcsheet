@@ -7,10 +7,13 @@ import { FormulaToolbarComponent } from './formula-toolbar/formula-toolbar.compo
 import { InsertToolbarComponent } from './insert-toolbar/insert-toolbar.component';
 import { ViewToolbarComponent } from './view-toolbar/view-toolbar.component';
 import { SettingToolbarComponent } from './setting-toolbar/setting-toolbar.component';
-import { ClipboardComponent } from './start-toolbar/clipboard-board/clipboard.component';
+import { ClipboardComponent } from './start-toolbar/clipboard-board/clipboard-board.component';
 import { FcSheetComponent } from './fc-sheet.component';
 import { FormulaBarComponent } from './formular-bar/formular-bar.component';
 import { SpreadSheetsModule } from '@grapecity/spread-sheets-angular';
+import { StatusBarComponent } from './status-bar/status-bar.component';
+import { fontBoardComponent } from './start-toolbar/font-board/font-board.component';
+import { AlignmentBoardComponent } from './start-toolbar/alignment-board/alignment-board.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -31,6 +34,9 @@ import { SpreadSheetsModule } from '@grapecity/spread-sheets-angular';
     SettingToolbarComponent,
     ViewToolbarComponent,
     ClipboardComponent,
+    fontBoardComponent,
+    AlignmentBoardComponent,
+    StatusBarComponent,
   ],
   providers: [
   ]

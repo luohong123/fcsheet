@@ -1,14 +1,14 @@
 .formularbar-container {
     background-color: white;
-    padding: 0px;
-    height: auto;
+    height: 24px;
+    margin: 4px 0 4px 2px;
     display: flex;
     overflow: hidden;
-    margin-top: 3px;
 }
 
 .named-range-selector {
-    height: 21px;
+    width: 201px;
+    height: 20px;
     font-family: "Segoe UI";
     text-align: center;
     margin-top: -1px;
@@ -19,7 +19,66 @@
 }
 
 .formularbar-item {
-    width: 201px;
-    height: 20px;
     margin: 1px 0;
+}
+
+.formularbar-splitter {
+    height: 20px;
+    width: 32px;
+    background-image: url(../../../assets/image/splitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1px 0;
+    display: block;
+    cursor: w-resize;
+}
+
+.formularbar-group {
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    margin-right: 4px;
+    width: 60px;
+    padding-left: 2px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.formularbar-group>button {
+    border: none;
+    background-color: transparent;
+}
+
+.cancel-btn {
+    background-image: url(../../../assets/image/icons.png);
+    background-position: 0px -864px;
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+}
+
+.ok-btn {
+    background-image: url(../../../assets/image/icons.png);
+    background-position: 0px -1584px;
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+}
+
+.functions-btn {
+    background-image: url(../../../assets/image/icons.png);
+    background-position: 0px -1600px;
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+}
+
+.formulabar-text-container {
+    font-size: 14px;
+    font-family: "Segoe UI";
+    border: 1px solid #c6c6c6;
+    background: white;
+    flex: 1;
+    margin: 0 20px 0 0;
 }

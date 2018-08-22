@@ -1,12 +1,17 @@
-.fcsheet-container {}
+.fcsheet-container {
+    height: 100%;
+    width: 100%;
+}
 
 .fcsheet-header-top {
     border-bottom: 1px solid #d3d3d3;
 }
 
 .fcsheet-header-container {
-    height: 175px;
+    height: 143px;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .fcsheet-header-btn {
@@ -14,10 +19,9 @@
     background-color: #217346;
     text-decoration: none;
     cursor: pointer;
-    padding: 5px 20px 5px 20px;
+    padding: 6px 20px 6px 20px;
     margin: 0 2px;
     float: left;
-    min-width: 50px;
     text-align: center;
     font-weight: bold;
 }
@@ -49,11 +53,8 @@
 
 .fcsheet-footer-container {}
 
-
-
 .active {
     border-left: 1px solid #d3d3d3;
     border-right: 1px solid #d3d3d3;
     border-top: 1px solid #d3d3d3;
-    font-weight: bolder;
 }

@@ -36,8 +36,8 @@ export const tabOptions: TabOption[] = [
 export class FcSheetComponent {
     spreadBackColor = 'aliceblue';
     hostStyle = {
-        width: '95vw',
-        height: '80vh'
+        width: this.getWindowWidth() + 'px',
+        height: this.getSheetHeight() + 'px'
     };
     private spread: GC.Spread.Sheets.Workbook;
     private fcSheetEvents = FcSheetEvents;
@@ -67,6 +67,9 @@ export class FcSheetComponent {
     }
     private getWindowWidth() {
         return window.innerWidth;
+    }
+    private getSheetHeight() {
+        return window.innerHeight - 205
     }
     private handleTabBtnClick(ev: Event, tab: TabOption) {
         this.toSetTabOption(tab);
